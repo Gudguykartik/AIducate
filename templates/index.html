@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIducate - Smart Learning Platform</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AIducate<span class="logo-dot">.</span></div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="{% url 'frontend:paths' %}">Learning Paths</a>
+            <a href="{% url 'frontend:progress' %}">My Progress</a>
+            <a href="#insights">AI Insights</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">AI-Powered Learning</div>
+            <h1>Learn Smarter, Not Harder</h1>
+            <p>Our AI analyzes your learning patterns to create a personalized educational journey that adapts in real-time</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="number">98%</span>
+                    <span class="label">Completion Rate</span>
+                </div>
+                <div class="stat">
+                    <span class="number">50K+</span>
+                    <span class="label">Active Learners</span>
+                </div>
+                <div class="stat">
+                    <span class="number">24/7</span>
+                    <span class="label">AI Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="neural-network"></div>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Neural Learning</h3>
+            <p>AI-powered system that learns how you learn</p>
+            <div class="feature-progress"></div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Goals</h3>
+            <p>Adaptive milestones that evolve with your progress</p>
+            <div class="feature-progress"></div>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>AI Mentor</h3>
+            <p>24/7 personalized guidance and support</p>
+            <div class="feature-progress"></div>
+        </div>
+    </section>
+
+    <section class="learning-path">
+        <h2>Your AI-Curated Learning Path</h2>
+        <div class="path-timeline">
+            <div class="timeline-item active">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Foundations</h3>
+                    <p>Building core knowledge</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item active">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Advanced Concepts</h3>
+                    <p>Deepening understanding</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Specialization</h3>
+                    <p>Mastering your focus area</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h2>Recommended for You</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="course-image">
+                    <div class="course-badge">98% Match</div>
+                </div>
+                <div class="course-content">
+                    <h3>Deep Learning Fundamentals</h3>
+                    <p>Perfect next step based on your progress</p>
+                    <div class="course-meta">
+                        <span>8 weeks</span>
+                        <span>•</span>
+                        <span>Interactive</span>
+                    </div>
+                    <button class="btn">Begin Journey</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <div class="course-badge">95% Match</div>
+                </div>
+                <div class="course-content">
+                    <h3>AI Ethics & Society</h3>
+                    <p>Recommended based on your interests</p>
+                    <div class="course-meta">
+                        <span>6 weeks</span>
+                        <span>•</span>
+                        <span>Case Studies</span>
+                    </div>
+                    <button class="btn">Begin Journey</button>
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="course-image">
+                    <div class="course-badge">92% Match</div>
+                </div>
+                <div class="course-content">
+                    <h3>Neural Networks Advanced</h3>
+                    <p>Aligned with your career goals</p>
+                    <div class="course-meta">
+                        <span>10 weeks</span>
+                        <span>•</span>
+                        <span>Hands-on</span>
+                    </div>
+                    <button class="btn">Begin Journey</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-insights">
+        <h2>Your Learning Analytics</h2>
+        <div class="insights-grid">
+            <div class="insight-card">
+                <h3>Learning Style</h3>
+                <div class="insight-content">
+                    <div class="insight-chart visual"></div>
+                    <p>Visual learner with strong practical application preference</p>
+                </div>
+            </div>
+            <div class="insight-card">
+                <h3>Peak Performance</h3>
+                <div class="insight-content">
+                    <div class="insight-chart performance"></div>
+                    <p>Optimal learning times: 9-11 AM, 4-6 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

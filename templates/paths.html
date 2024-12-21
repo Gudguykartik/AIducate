@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Paths - AIducate</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'paths.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AIducate<span class="logo-dot">.</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="{% url 'frontend:paths' %}" class="active">Learning Paths</a>
+            <a href="#progress">My Progress</a>
+            <a href="#insights">AI Insights</a>
+        </div>
+    </nav>
+
+    <header class="paths-hero">
+        <div class="paths-hero-content">
+            <h1>Your Learning Journey</h1>
+            <p>Explore AI-curated paths tailored to your goals and learning style</p>
+        </div>
+        <div class="floating-cards">
+            <div class="float-card" style="--delay: 0s">Machine Learning</div>
+            <div class="float-card" style="--delay: 1s">Data Science</div>
+            <div class="float-card" style="--delay: 2s">AI Ethics</div>
+            <div class="float-card" style="--delay: 3s">Deep Learning</div>
+        </div>
+    </header>
+
+    <section class="path-explorer">
+        <div class="path-filters">
+            <button class="filter-btn active">All Paths</button>
+            <button class="filter-btn">Beginner</button>
+            <button class="filter-btn">Intermediate</button>
+            <button class="filter-btn">Advanced</button>
+        </div>
+
+        <div class="paths-grid">
+            <div class="path-card" data-difficulty="beginner">
+                <div class="path-header">
+                    <div class="path-icon">🎯</div>
+                    <span class="difficulty beginner">Beginner</span>
+                </div>
+                <h3>AI Fundamentals</h3>
+                <div class="path-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                    <span>60% Complete</span>
+                </div>
+                <ul class="path-milestones">
+                    <li class="completed">Introduction to AI</li>
+                    <li class="completed">Basic Python for AI</li>
+                    <li class="active">Machine Learning Basics</li>
+                    <li>Neural Networks 101</li>
+                </ul>
+                <button class="continue-btn">Continue Learning</button>
+            </div>
+
+            <div class="path-card" data-difficulty="intermediate">
+                <div class="path-header">
+                    <div class="path-icon">🤖</div>
+                    <span class="difficulty intermediate">Intermediate</span>
+                </div>
+                <h3>Machine Learning Specialist</h3>
+                <div class="path-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 30%"></div>
+                    </div>
+                    <span>30% Complete</span>
+                </div>
+                <ul class="path-milestones">
+                    <li class="completed">Advanced Python</li>
+                    <li class="active">Supervised Learning</li>
+                    <li>Unsupervised Learning</li>
+                    <li>Model Deployment</li>
+                </ul>
+                <button class="continue-btn">Continue Learning</button>
+            </div>
+
+            <div class="path-card" data-difficulty="advanced">
+                <div class="path-header">
+                    <div class="path-icon">🧠</div>
+                    <span class="difficulty advanced">Advanced</span>
+                </div>
+                <h3>Deep Learning Expert</h3>
+                <div class="path-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 15%"></div>
+                    </div>
+                    <span>15% Complete</span>
+                </div>
+                <ul class="path-milestones">
+                    <li class="completed">Neural Architecture</li>
+                    <li class="active">CNN & RNN</li>
+                    <li>Transformers</li>
+                    <li>Model Optimization</li>
+                </ul>
+                <button class="continue-btn">Continue Learning</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-map">
+        <h2>Your Skill Development Map</h2>
+        <div class="skill-graph">
+            <div class="skill-node" style="--progress: 90%">
+                <div class="node-content">
+                    <span class="node-title">Python</span>
+                    <span class="node-level">Expert</span>
+                </div>
+            </div>
+            <div class="skill-node" style="--progress: 75%">
+                <div class="node-content">
+                    <span class="node-title">ML Basics</span>
+                    <span class="node-level">Advanced</span>
+                </div>
+            </div>
+            <div class="skill-node" style="--progress: 60%">
+                <div class="node-content">
+                    <span class="node-title">Neural Nets</span>
+                    <span class="node-level">Intermediate</span>
+                </div>
+            </div>
+            <div class="skill-node" style="--progress: 45%">
+                <div class="node-content">
+                    <span class="node-title">Deep Learning</span>
+                    <span class="node-level">Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
