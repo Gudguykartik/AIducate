@@ -2,11 +2,13 @@
 
 An innovative educational platform that leverages artificial intelligence to deliver personalized learning experiences. Built with Django and HTMX for seamless, modern interactions.
 
-![Learning Dashboard](/api/placeholder/800/400 "Platform Dashboard")
-*Main dashboard showing personalized learning recommendations and progress tracking*
+![Login Page](./login.png)
 
-![Analytics View](/api/placeholder/800/400 "Analytics Dashboard")
-*Analytics dashboard displaying student performance metrics and engagement data*
+
+![Learning Progress Page](./path.png)
+![Learning Progress Page](./path2.png)
+![Learning Progress Page](./path3.png)
+*Main dashboard showing personalized learning recommendations and progress tracking*
 
 ## 🚀 Features
 
