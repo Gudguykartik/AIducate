@@ -4,7 +4,9 @@ An innovative educational platform that leverages artificial intelligence to del
 
 ![Login Page](./login.png)
 
-
+![Learning Progress Page](./aiducate.png)
+![Learning Progress Page](./aiducate2.png)
+![Learning Progress Page](./aiducate3.png)
 ![Learning Progress Page](./path.png)
 ![Learning Progress Page](./path2.png)
 ![Learning Progress Page](./path3.png)
